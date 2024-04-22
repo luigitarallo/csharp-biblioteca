@@ -19,7 +19,7 @@ namespace csharp_biblioteca
 
         public string Email { get { return _email; } set { _email = value; } }
 
-        public string Password { get { return _password; } set { _password = value; } }
+        public string Password { set { _password = value; } }
 
         public string Telefono { get { return _telefono; } set { _telefono = value; } }
 
