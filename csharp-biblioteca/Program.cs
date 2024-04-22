@@ -8,13 +8,14 @@
 
             Utente utente1 = new Utente("Tarallo", "Luigi", "gigi@esempio.it", "123pass", "23123323");
             Utente utente2 = new Utente("Rossi", "Michele", "mik@esempio.it", "123445pas", "123123323");
+            Utente utente3 = new Utente("Bianchi", "Francesco", "francy@esempio.it", "123421pas", "123132132");
 
             //Creazione documenti
             Libro libro1 = new Libro(
                 "1234",
                 "Cuore", 1900, "Letteratura",
                 new Dictionary<string, int> { { "A1", 1 } },
-                new Dictionary<string, string> { { "Nome", "John" }, { "Cognome", "Doe" } },
+                new Dictionary<string, string> { { "Edmondo" , "De Amicis" } },
                 200);
             DVD dvd1 = new DVD("12345",
                 "Jurassic Park",
@@ -24,12 +25,28 @@
                 new Dictionary<string, string> { { "Steven", "Spielberg"},
                 },123);
 
+            Libro libro2 = new Libro(
+                "1342",
+                "Il Signore degli anelli",1954, "Fantasy",
+                new Dictionary<string, int> { { "A2", 2 } },
+                new Dictionary<string, string> { { "J.J.R.", "Tolkien" } },
+                1400
+                );
+
+            DVD dvd2 = new DVD("3231", "Her", 2013, "Sci-fi",
+                new Dictionary<string, int> { { "F2", 3 } },
+                new Dictionary<string, string> { { "Spike ", "Jonze" } },
+                180);
+
             Biblioteca biblioteca = new Biblioteca();
 
             biblioteca.AggiungiUtente(utente1);
             biblioteca.AggiungiUtente(utente2);
+            biblioteca.AggiungiUtente(utente3);
+
             biblioteca.AggiungiDocumento(libro1);
-            biblioteca.AggiungiDocumento(dvd1);
+            biblioteca.AggiungiDocumento(libro2);
+            biblioteca.AggiungiDocumento(dvd2);
             
             // Creazione prestiti
 

@@ -41,7 +41,6 @@ namespace csharp_biblioteca
                     risultati.Add(documento);
                 }
             }
-
             return risultati;
         }
 
@@ -56,7 +55,6 @@ namespace csharp_biblioteca
                     risultati.Add(documento);
                 }
             }
-
             return risultati;
         }
 
@@ -71,10 +69,7 @@ namespace csharp_biblioteca
                     risultati.Add(prestito);
                 }
             }
-
             return risultati;
         }
-
-        public List<Utente> CercaUtenti()
     }
 }
